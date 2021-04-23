@@ -10,7 +10,7 @@ const FormExpense = (props) => {
     e.preventDefault();
     const newExpense = {
       title,
-      amount,
+      amount: +amount,
       date: new Date(date),
     };
     props.onNewExpense(newExpense);
